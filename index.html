@@ -2,43 +2,9 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-  * {
-    font-family:Arial, Helvetica, sans-serif;
-  }
-</style>
-<!-- <style>
- * {box-sizing: border-box;}
-
-.img-comp-container {
-  position: relative;
-  height: 200px; /*should be the same height as the images*/
-}
-
-.img-comp-img {
-  position: absolute;
-  width: auto;
-  height: auto;
-  overflow:hidden;
-}
-
-.img-comp-img img {
-  display:block;
-  vertical-align:middle;
-}
-
-.img-comp-slider {
-  position: absolute;
-  z-index:9;
-  cursor: ew-resize;
-  /*set the appearance of the slider:*/
-  width: 40px;
-  height: 40px;
-  background-color: #2196F3;
-  opacity: 0.7;
-  border-radius: 50%;
-}
-</style>
+<link rel="stylesheet" type="text/css" href="styles.css" />
+<link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@700&family=Quicksand&display=swap" rel="stylesheet">
 <script>
 function initComparisons() {
   var x, i;
@@ -116,27 +82,111 @@ function initComparisons() {
     }
   }
 }
-</script> -->
+</script>
 </head>
 <body>
+  
+  <ul>
+    <!-- <li><a href="default.asp">Resources</a></li> -->
+    <li><a href="resources.html">Resources</a></li>
+  </ul>
 
-<h1 style="text-align: center;">Coming Soon</h1>
+  <div class="background">
+    <div class="hero-text">
+      <!-- <h1 style="font-size:50px">Welcome</h1> -->
+      <!-- <h3>ethically sourced, lab grown, feel good food</h3> -->
+      <!-- <button>Hire me</button> -->
+    </div>
+  </div>
 
-<!-- <p>Click and slide the blue slider to compare two images:</p>
+<!-- <h1 style="text-align: center;">ethically sourced, lab grown, feel good food</h1> -->
+<div class="menu-container">
 
-<div class="img-comp-container">
+  <img src="./images/menu.png" height="1000" class="center">
+</div>
+
+
+<!-- <div class="img-comp-container">
   <div class="img-comp-img">
-    <img src="img_snow.jpg" width="300" height="200">
+    <img src="./images/compare-04.png" width="800" height="600">
   </div>
   <div class="img-comp-img img-comp-overlay">
-    <img src="img_forest.jpg" width="300" height="200">
+    <img src="./images/compare-05.png" width="800" height="600">
+  </div>
+</div> -->
+
+<!-- <div class="img-comp-container">
+  <div class="img-comp-img">
+    <img src="./images/compare-07.png" width="600" height="400">
+  </div>
+  <div class="img-comp-img img-comp-overlay">
+    <img src="./images/compare_Artboard 8.png" width="600" height="400">
+  </div>
+</div> -->
+
+<div class="mission">
+  <div class="img-comp-container">
+    <div class="img-comp-img">
+      <img src="./images/wordcloud.png" width="512" height="384">
+    </div>
+    <div class="img-comp-img img-comp-overlay">
+      <img src="./images/wordcloud2.png" width="512" height="384">
+    </div>
+  </div>
+  <div class="text-mission">
+    <h2>Our Mission</h2>
+    <p>Labivore: an animal or person that eats food of lab origin.</p>
+    <p>We are quickly becoming labivore's more than we realize. We might even have been labivores 
+      earlier than we think. </p>
+      <p>We aim to demystify lab grown meat, to build a culture around meatless 
+      meat, and unlock new cuisines previously unimaginable. Our safe space allows people from all 
+      cultures to enjoy the food of previous generations without worrying about the environmental 
+      and ethical consequences of their food choices. Our pristine, lab to table experience prevents 
+      viruses from passing on from animals to humans. 
+    </p>
+  </br>
+    <h2>Our Story</h2>
+    <p>The onset of Covid-19 brought another onset of “pandemic xenophobia scapegoating,” similar to 
+      the ones the world has seen before like with Ebola and the Spanish Flu. The Labivore’s Dilemma 
+      was created in the heart of NYC’s Chinatown, one of the areas that was most impacted during the pandemic. 
+      Our scientists and chefs have developed the menu to tackle the collapse of human integrity and racial 
+      aggressions around food.</p>
+      <p>Our founders traveled around the world exploring wet markets and Eastern cuisines to find out for 
+        themselves whether the Western rhetoric on the East is as uncivilized, impoverished, unsanitary, 
+        and crowded as people say it is. They found the media was wrong, and there are many more nuances 
+        to why things are the way they are now.
+      </p>
+      <p>
+        By developing the formulas and recipes to allow for more sustainable and humane practices of meat 
+        eating, our community has welcomed us with open arms and we have been able to educate our customers 
+        about good food practices.
+
+      </p>
   </div>
 </div>
+
+
+
+<div id="googleMap" style="width:100%;height:400px;"></div>
+
+<script>
+function initMap() {
+var mapProp= {
+  center:new google.maps.LatLng(51.508742,-0.120850),
+  zoom:5,
+};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+</script>
+
+<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSpICnOUUPqzZlUWsNIeZAM_lMPCm8XbM&callback=myMap"></script> -->
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSpICnOUUPqzZlUWsNIeZAM_lMPCm8XbM&callback=initMap"
+type="text/javascript"></script>
 
 <script>
 /*Execute a function that will execute an image compare function for each element with the img-comp-overlay class:*/
 initComparisons();
-</script> -->
+</script>
 
 </body>
 </html>
