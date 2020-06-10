@@ -167,22 +167,25 @@ function initComparisons() {
 
 <img src="./images/storefront.png" class="center" style="padding-top: 30px">
 
+<h2 style="text-align: center;">Hours</h2>
+<p style="text-align: center;">Mon-Sun: 10am-10pm</p>
+<p style="text-align: center;">Located at the Heart of NYC Chinatown</p>
 
 <div id="googleMap" style="width:100%;height:400px;"></div>
 
 <script>
 function initMap() {
 var mapProp= {
-  center:new google.maps.LatLng(51.508742,-0.120850),
+  center:new google.maps.LatLng(40.7158,73.9970),
   zoom:5,
 };
 var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
 }
 </script>
 
-<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSpICnOUUPqzZlUWsNIeZAM_lMPCm8XbM&callback=myMap"></script> -->
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSpICnOUUPqzZlUWsNIeZAM_lMPCm8XbM&callback=initMap"
-type="text/javascript"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSpICnOUUPqzZlUWsNIeZAM_lMPCm8XbM&callback=myMap"></script>
+<!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSpICnOUUPqzZlUWsNIeZAM_lMPCm8XbM&callback=initMap" -->
+<!-- type="text/javascript"></script> -->
 
 <script>
 /*Execute a function that will execute an image compare function for each element with the img-comp-overlay class:*/

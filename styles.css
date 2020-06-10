@@ -112,9 +112,11 @@ li a:hover {
 
 h1,h2 {
   font-family: 'Anonymous Pro', monospace;
+  color: white;
 }
 p {
   font-family: 'Quicksand', sans-serif;
+  color:white;
 }
 /* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
 @media screen and (max-width: 600px) {
