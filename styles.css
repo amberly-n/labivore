@@ -3,7 +3,7 @@
   font-family:Arial, Helvetica, sans-serif;
   
   /* font-family: Quicksand; */
-  background-color: #000000;
+  /* background-color: #000000; */
  }
 
  .menu-container {
@@ -94,12 +94,14 @@ li a:hover {
 .mission {
   padding-top: 20px;
   padding-left: 200px;
+  background-color: black;
 }
 .text-mission {
   float: left;
   padding-left: 550px;
   padding-right: 300px;
   color: white;
+  background-color: black;
 }
 
 .story {
@@ -131,4 +133,12 @@ p {
     left: 0;
     transform: none;
   }
+}
+
+#googleMap {
+  background-color: white;
+}
+
+.info-container {
+  background-color: black;
 }
